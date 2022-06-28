@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: udgram-api-feed
+  name: udgram-api-feed
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: udgram-api-feed
+  template:
+    metadata:
+      labels:
+        app: udgram-api-feed
+    spec:
+      containers:
+      - image: lavender151/udgram-api-feed:v1
+        name: udgram-api-feed
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "2048Mi"
+            cpu: "500m"   
+        ports:
+        - containerPort: 8080
