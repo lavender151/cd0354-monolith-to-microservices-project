@@ -15,7 +15,7 @@ spec:
         app: udgram-api-feed
     spec:
       containers:
-      - image: lavender151/udgram-api-feed:v1
+      - image: lavender151/udagram-api-feed:v1
         name: udgram-api-feed
         imagePullPolicy: Always
         resources:
