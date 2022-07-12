@@ -15,7 +15,7 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - image: lavender151/udagram-frontend:v6
+      - image: lavender151/udagram-frontend:v1
         name: udagram-frontend
         imagePullPolicy: Always
         resources:
@@ -23,7 +23,7 @@ spec:
             memory: "64Mi"
             cpu: "250m"
           limits:
-            memory: "2048Mi"
+            memory: "1024Mi"
             cpu: "500m"   
         ports:
         - containerPort: 8100
