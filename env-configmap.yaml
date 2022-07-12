@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: arn:aws:s3:::541568218696-dev
+  AWS_BUCKET: tantt5-dev
   AWS_PROFILE: default
   AWS_REGION: us-east-2
   JWT_SECRET: hello
   POSTGRES_DB: postgres
-  POSTGRES_HOST: cdr.caglskwv3ybc.us-east-2.rds.amazonaws.com
+  POSTGRES_HOST: cdr.c7ekexx8hk2f.us-east-2.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config
