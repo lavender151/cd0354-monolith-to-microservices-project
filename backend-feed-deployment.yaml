@@ -8,15 +8,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: udgram-api-feed
+      app: udagram-api-feed
   template:
     metadata:
       labels:
-        app: udgram-api-feed
+        app: udagram-api-feed
     spec:
       containers:
       - image: lavender151/udagram-api-feed:v1
-        name: udgram-api-feed
+        name: udagram-api-feed
         imagePullPolicy: Always
         resources:
           requests:
